@@ -1,6 +1,6 @@
 .menu{
   width: 100%;
-  background-color: #aaaaaa;
+  background-color: #fdd94e;
   text-align: center;
   padding: 14px 16px;
   margin-bottom: 20px;
@@ -24,10 +24,7 @@
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif ;
 }
 
-footer {
-  background-color: #EEEEEE;
-  padding: 25px;
-}
+
 
 .carousel-inner img {
   width: 100%;
@@ -45,7 +42,11 @@ footer {
 
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-  background-color: #696969 !important; 
+  background-color: #5dc7d0 !important; 
+}
+
+body > .container-fluid{
+  flex: 1;
 }
 
 h3{
@@ -60,22 +61,23 @@ p, .Categorias, ul{
 }
 
 .recuadro{
-    background-color: #aaaaaa !important;
+    background-color: #43546a !important;
 }
-
+/*Recuadros Index Explicativos*/
 .well{
     width: 350px;
     height: 80px;
     margin: 20px;
     padding: auto;
-    color: #000000;
+    color: #333630;
     text-align: center;
-    background-color: #808080;
+    background-color: #43546a;
 }
 
-.pie{
-    color: #000000;
+.Color-text{
+  color: #9899A0;
 }
+/*------------------------------------------*/
 .imgcentral{
   width: 60%;
   height: auto;
@@ -90,18 +92,32 @@ p, .Categorias, ul{
   margin: 20px auto;
 }
 
-.container-fluid{
-  background-color: #a9a9a9;
+/*Pie de Pagina*/
+.pie{
+    color: #000000;
 }
 
+.container-fluid{
+  background-color: #187f3f;
+}
+footer {
+  margin-top: auto;
+  padding: 25px;
+}
+/*-------------------------------------------*/
 .Categorias{
   color: #000000;
 }
 
 .btn-primary{
-  background-color: #808080 !important;
+  background-color: #43546a  !important;
+  color: #9899A0;
 }
 
 .actualizar{
   margin: 20px;
+}
+
+.Separaion{
+  margin-top: auto;
 }

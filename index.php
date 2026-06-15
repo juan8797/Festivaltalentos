@@ -15,9 +15,9 @@
 <div class="container text-center">    
   <h3 class="Categorias">Festival El Colegio Tiene Talentos</h3><br>
   <div class="row">
-    <img src="imgcentral.jpeg" alt="Objetivos" class="imgcentral">
+    <img src="ImagenPrincipal.jpeg" alt="Objetivos" class="imgcentral">
     <div class="col-sm-4">
-      <img src="Bailegrupal.jpeg" alt="Baile grupal" class="img-responsive">
+      <img src="BailesGrupales.jpeg" alt="Baile grupal" class="img-responsive">
       <p class="Categorias">Bailes Grupales</p>
     </div>
     <div class="col-sm-4"> 
@@ -25,32 +25,28 @@
       <p class="Categorias">Talentos Individuales</p>    
     </div>
     <div class="col-sm-4"> 
-      <img src="Talentodeportivo.jpeg" alt="Talento deportivo" class="img-responsive">
+      <img src="TalentoDeportivo.jpeg" alt="Talento deportivo" class="img-responsive">
       <p class="Categorias">Talentos Deportivos</p>    
     </div>
     <div class="col-sm-4">
       <div class="well">
-       <h4 class="Categorias">talento individual</h4>
-       <p class="Categorias">Canto, Bailes, Instrumento</p>
+       <h4 class="Color-text">talento individual</h4>
+       <p class="Color-text">Canto, Bailes, Instrumento</p>
       </div>
       <div class="well" >
-       <h4 class="Categorias">Bailes Grupales</h4>
-       <ul class="Categorias">
+       <h4 class="Color-text">Bailes Grupales</h4>
+       <ul class="Color-text">
           <li>Categoria Prejuvenil</li>
           <li>Categoria Juvenil</li>
        </ul>
       </div>
       <div class="well">
-       <h4 class="Categorias">talento Deportivos</h4>
-       <p class="Categorias">muestranos que deportes pradticas</p>
+       <h4 class="Color-text">talento Deportivos</h4>
+       <p class="Color-text">muestranos que deportes pradticas</p>
       </div>
     </div>
   </div>
 </div><br>
-
-<footer class="container-fluid text-center">
-  <p class="pie">Footer Text</p>
-</footer>
-
+<?php include 'PiePagina.php'; ?>
 </body>
 </html>

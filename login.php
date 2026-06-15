@@ -15,7 +15,7 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="recuadro card-header text-center">
-                    <h4>Iniciar Sesión</h4>
+                    <h4 class="Color-text">Iniciar Sesión</h4>
                 </div>
                 <div class="card-body">
                     <form action="login/procesaLogin.php" method="post">

@@ -15,7 +15,7 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="recuadro card-header text-center">
-                    <h4>Registro</h4>
+                    <h4 class="Color-text">Registro</h4>
                 </div>
                 <div class="card-body">
                     <form action="login/procesaRegistro.php" method="post">
