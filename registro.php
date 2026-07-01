@@ -40,6 +40,7 @@
                             <select name="rol" class="form-control" required>
                                 <option value="estudiante">Estudiante</option>
                                 <option value="docente">Docente</option>
+                                <option value="jurado">Jurado</option>
                             </select>
                         </div>
                         <div class="text-center">
