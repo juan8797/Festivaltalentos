@@ -87,81 +87,80 @@ $pagina_volver = ($usuario['rol'] === 'docente') ? 'Panel_docentes.php' : 'Panel
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<div class="actualizar">
-
-    <div class="perfil-body">
-
-        <?php if ($mensaje): ?>
-            <div class="alerta <?= $tipo ?>">
-                <?= htmlspecialchars($mensaje) ?>
-            </div>
-        <?php endif; ?>
+    <div class="actualizar">
         
-    <div class="container mt-6">
-    <div class="row justify-content-center">
-        <div class="col-md-5">
-            <div class="card">
-                <div class="recuadro card-header text-center">
-                    <h4>Editar Perfil</h4>
+        <div class="perfil-body">
+            
+            <?php if ($mensaje): ?>
+                <div class="alerta <?= $tipo ?>">
+                    <?= htmlspecialchars($mensaje) ?>
                 </div>
-        <div class="card-body">
-        <form method="POST" action="editarPerfil.php">
-
-            <p class="Categorias">Datos personales</p>
-
-            <div class="">
-                <div class="mb-3">
-                    <label class="form-label">Nombre:</label>
-                    <input type="text" name="nombre" class="form-control"
-                           value="<?= htmlspecialchars($usuario['nombre']) ?>" required>
+                <?php endif; ?>
+                
+                <div class="container mt-6">
+                    <div class="row justify-content-center">
+                        <div class="col-md-5">
+                            <div class="card">
+                                <div class="recuadro card-header text-center">
+                                    <h4>Editar Perfil</h4>
+                                </div>
+                                <div class="card-body">
+                                    <form method="POST" action="editarPerfil.php">
+                                        
+                                        <p class="Categorias">Datos personales</p>
+                                        
+                                        <div class="">
+                                            <div class="mb-3">
+                                                <label class="form-label">Nombre:</label>
+                                                <input type="text" name="nombre" class="form-control"
+                                                value="<?= htmlspecialchars($usuario['nombre']) ?>" required>
+                                            </div>
+                                            <div class="mb-2">
+                                                <label class="form-label">Apellido:</label>
+                                                <input type="text" name="apellido" class="form-control"
+                                                value="<?= htmlspecialchars($usuario['apellido']) ?>" required>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Correo electrónico:</label>
+                                            <input type="email" name="correo" class="form-control"
+                                            value="<?= htmlspecialchars($usuario['correo']) ?>" required>
+                                        </div>
+                                        
+                                        <p class="Categorias">Cambiar contraseña <span style="color:#ccc">(opcional)</span></p>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Nueva contraseña</label>
+                                            <input type="password" name="nueva_contrasena" class="form-control"
+                                            placeholder="Déjalo en blanco para no cambiarla">
+                                            <p class="Categorias">Mínimo 6 caracteres.</p>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Confirmar contraseña</label>
+                                            <input type="password" name="confirmar_contrasena" class="form-control"
+                                            placeholder="Repite la nueva contraseña">
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn-guardar">Guardar cambios</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-2">
-                    <label class="form-label">Apellido:</label>
-                    <input type="text" name="apellido" class="form-control"
-                           value="<?= htmlspecialchars($usuario['apellido']) ?>" required>
+                <a href="<?= $pagina_volver ?>" class="btn-volver">← Volver al panel</a>
+                
+                <div class="info-pie">
+                    Rol: <span><?= htmlspecialchars($usuario['rol']) ?></span>
+                    &nbsp;·&nbsp;
+                    Registrado el: <span><?= date('d/m/Y', strtotime($usuario['fecha_registro'])) ?></span>
                 </div>
+                
             </div>
-
-            <div class="mb-3">
-                <label class="form-label">Correo electrónico:</label>
-                <input type="email" name="correo" class="form-control"
-                       value="<?= htmlspecialchars($usuario['correo']) ?>" required>
-            </div>
-
-            <p class="Categorias">Cambiar contraseña <span style="color:#ccc">(opcional)</span></p>
-
-            <div class="mb-3">
-                <label class="form-label">Nueva contraseña</label>
-                <input type="password" name="nueva_contrasena" class="form-control"
-                       placeholder="Déjalo en blanco para no cambiarla">
-                <p class="Categorias">Mínimo 6 caracteres.</p>
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">Confirmar contraseña</label>
-                <input type="password" name="confirmar_contrasena" class="form-control"
-                       placeholder="Repite la nueva contraseña">
-            </div>
-        <div class="text-center">
-            <button type="submit" class="btn-guardar">Guardar cambios</button>
         </div>
-        </form>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <a href="<?= $pagina_volver ?>" class="btn-volver">← Volver al panel</a>
-
-        <div class="info-pie">
-            Rol: <span><?= htmlspecialchars($usuario['rol']) ?></span>
-            &nbsp;·&nbsp;
-            Registrado el: <span><?= date('d/m/Y', strtotime($usuario['fecha_registro'])) ?></span>
-        </div>
-
-    </div>
-</div>
-
-</body>
-</html>
+        
+    </body>
+    </html>

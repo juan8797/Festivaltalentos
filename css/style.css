@@ -121,3 +121,97 @@ footer {
 .Separaion{
   margin-top: auto;
 }
+
+.encabezado-panel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.btn-editar {
+    background-color: #43546a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-editar:hover {
+    background-color: #2f3d4e;
+}
+/*cajas textuales sobre el festival*/
+.box-1{
+  background-color: #fdd94e;
+}
+
+.box-2{
+  background-color: #43546a;
+}
+
+.box-3{
+  background-color: #9899A0;
+}
+
+.box-4{
+  background-color: #ffffff;
+}
+
+.box-4, h3, p{
+  color: #000000;
+}
+
+.Container-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-1, .box-2, .box-3, .box-4{
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+/*----------------------------------------*/
+
+/*Formulario para participar*/
+.formulario-participacion {
+    width: 400px;
+    margin: 40px auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.formulario-participacion h2 {
+    background-color: #43546a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.formulario-participacion .cuerpo-formulario {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.formulario-participacion .cuerpo-formulario p {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.formulario-participacion label {
+    color: #000000;
+}
+
+.formulario-participacion button {
+    display: block;
+    margin: 20px auto 0 auto;
+    background-color: #43546a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*---------------------------------------*/
