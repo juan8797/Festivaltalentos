@@ -21,7 +21,7 @@
       <p class="Categorias">Bailes Grupales</p>
     </div>
     <div class="col-sm-4"> 
-      <img src="Talentoindividual.jpeg" alt="Talento individual" class="img-responsive">
+      <img src="talentos individuales.jpeg" alt="Talento individual" class="img-responsive">
       <p class="Categorias">Talentos Individuales</p>    
     </div>
     <div class="col-sm-4"> 
